@@ -22,5 +22,10 @@ str = "Computer"
 print(str[4])
 
 #Slicing
-x = "Engineering"
-print(x[1:5])
+x = "Computer Engineering"
+print(x[:8])
+print(x[8:])
+
+#Negative slicing
+y = "Apple"
+print(y[-3:-1])

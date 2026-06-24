@@ -68,6 +68,60 @@ value2 = False
 print("And operator:", value1 and value2)
 print("OR operator:", value1 or value2)
 
+#type conversion
+a = int("5")
+b = 5.555
+
+print(a + b)
+
+# str = "This is a string."
+# str = 'This is a string too.'
+# str = """This is also a string."""
+
+strr = "This is a string.\n we are creating in python."
+print(strr)
+
+# Concatenation
+str1 = "Hello"
+str2 = "World"
+
+print( str1 + str2 )
+final_str = str1 + str2
+print( final_str)
+
+#Length of string
+str3 = "Software"
+print( len(str3))
+
+#Indexing
+string = "Computer"
+print(string[4])
+
+#Slicing
+x = "Engineering"
+print(x[1:5])
+print(x[11:])
+
+#Negative slicing
+y = "Apple"
+print(y[-3:-1])
+
+#String Function
+a = "I am a student"
+print(a.endswith("ent"))
+
+b = "i am a coder"
+print(b.capitalize())
+
+c = "I am learing python from youtube"
+print(c.replace("youtube", "chatgpt"))
+
+d = "Find your name."
+print(d.find("your"))
+
+e = " I am learing java and javascript  from youtube"
+print(e.count("java"))
+
 #Taking input from user
 x = int(input("Enter any number: "))
 y = int(input("Enter any number: "))
