@@ -208,24 +208,6 @@ if name.lower() == "anish":
 else:
     print("Enter again")
 
-#Grade Claculator
-sub = input("Enter the subject:")
-print("The subject is " + sub)
-
-marks = int(input("Ener the marks between 0-100 "))
-
-if marks >= 80:
-    print("A")
-
-elif 60 <= marks <= 79:
-    print("B")
-
-elif 40 <= marks <= 59:
-    print("C")
-
-else:
-    print("F")
-
 # if else
 name = input("Enter your name:")
 if name.lower() == "anish shrestha":
@@ -236,7 +218,46 @@ if name.lower() == "anish shrestha":
     Future = 10 + age
     print("Your age after 10 years is:" + str(Future))
 else:
-    print("Enter again.")    
+    print("Enter again.")  
+
+#if else statement
+age = 21
+
+if(age >= 18):
+    print("you are egible for license.")
+    
+Age = 12
+
+if(Age >= 18):
+    print("you can vote.")
+else:
+    print("you cannot vote.")
+
+#Trafficlight using if else statement
+light = "green"
+
+if(light == "red"):
+    print("Stop")
+elif(light == "green"):
+    print("Go")
+elif(light == "yellow"):
+    print("Look")
+else:
+    print("Light is broken.")    
+
+#Grade Calculator
+marks = int(input("Enter student marks:"))
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+else:
+    grade = "D"
+
+print("Grade of the studen: ", grade)  
 
 # while loop
 i = 0
