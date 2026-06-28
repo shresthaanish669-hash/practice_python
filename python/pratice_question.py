@@ -78,3 +78,38 @@ if(x % 7 == 0):
 else: 
     print("not a multiple of 7")
 """
+
+""" Tenth Question
+WAP to ask user to enter names of their 3 favorite mavies and store them in list.
+movies = []
+flim1 = str(input("Enter 1st movie."))
+flim2 = str(input("Enter 2nd movie."))
+flim3 = str(input("Enter 3rd movie."))
+
+movies.append(flim1)
+movies.append(flim2)
+movies.append(flim3)
+
+print(movies)
+"""
+
+""" Eleventh Question
+WAP to check if list contains a palindrome of elements.
+list1 = [1, 2, 1]
+list2 = [1, 2, 3]
+
+copy_list1 = list1.copy()
+copy_list1.reverse()
+
+if(copy_list1 == list1):
+    print("is palindrome.")
+else:
+    print("is not palindrome.")
+"""
+
+"""Twelev Question
+WAP to count the number of students with the "A" grade in the following tuple.
+grade = ["C", "D", "A", "D", "A", "B", "B", "C"]
+grade.sort()
+print(grade)
+"""
