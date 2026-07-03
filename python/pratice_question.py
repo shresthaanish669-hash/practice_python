@@ -146,7 +146,6 @@ z = int(input("Enter the marks of Physics:"))
 marks.update({"physics": z})
 
 print(marks)
-
 """
 
 """ QS NO:15
@@ -156,4 +155,44 @@ values = {
     ("int", 9),
 }
 print(values)
+"""
+
+""" QS NO:16
+WAP to print numbers from 1 to 100.
+num = 1
+while num <= 100 :
+    print(num)
+    num += 1
+
+print("Program Executed")
+"""
+
+""" QS NO:17
+WAP to print numbers from 100 to 1.
+count = 100
+while count >= 1 :
+    print(count)
+    count -= 1
+
+print("Program Executed.")
+"""
+
+"""QS NO:18
+WAP to print the multiplication table of a number n.
+n = int(input("Enter a number:"))
+
+i = 1
+while i <= 10:
+    print(n*i)
+    i += 1
+"""
+
+"""QS NO:19
+Print the elements of the following list using loops.
+num = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] #traverse
+
+idx = 0
+while idx < len(num):
+    print(num[idx]) #num[0], num[1], num[2]....
+    idx += 1 
 """
