@@ -196,3 +196,25 @@ while idx < len(num):
     print(num[idx]) #num[0], num[1], num[2]....
     idx += 1 
 """
+
+"""QS NO:20
+Search for a number x in this tuple using loops.
+nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+ 
+x = 36
+
+i = 0 #initialization
+while i < len(nums):
+    if(nums[i] == x):
+        print("Found at idx", i)
+        break
+    else:
+        print("Finding..")
+    i += 1
+
+print("end of loop..")
+"""
+
+"""QS NO:21
+
+"""
