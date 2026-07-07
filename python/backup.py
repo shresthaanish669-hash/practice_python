@@ -359,7 +359,7 @@ print(student["subjects"]["math"])
 print(student.keys()) #method
 print(student.values()) #method
 print(student.items()) #method
-print(list(student.keys()))# typecasting changing dict into tuples
+print(list(student.keys()))# typecasting changing dictionay into tuples
 print(student.get("name)) #method
 
 new_dict = {"city" : "kathmandu", "age": 20}
@@ -421,3 +421,100 @@ while i<= 10 :
     print(i)
     i += 1
 print("Loop Ended")
+
+# #Break
+i = 1
+while i <= 5:
+    print(i)
+    if(i == 3):
+        break
+    i += 1
+print("End of loop")
+
+#Continue
+i = 1
+while i <= 10:
+    if(i%2 == 0):
+        i += 1
+        continue
+    print(i)
+    i += 1 
+
+#For loops
+nums = [1, 2, 3, 4, 5]
+
+for val in nums:
+    print(val)
+
+fruits = ["Apple", "Banana", "Grapes"]
+
+for val in fruits:
+    print(val)
+ 
+#tuples using in for loop
+tup = (1, 2, 3, 4, 5)
+
+for num in tup:
+    print(num)
+
+#string using in for loop
+str = "AnishShrestha" 
+
+for char in str:
+    print(char) 
+
+#For loop with else
+str = "Aeroplane in Mars"
+
+for char in str:
+    print(char)
+else:
+    print("False")
+
+#searching element i for loop
+str = "Engineer"
+
+for char in str:
+    if(char == 'e'):
+     print("e found")
+     break
+    print(char)
+
+print("END")
+
+num = [1, 3, 5, 6, 7, 8, 9]
+
+for el in num:
+   print(el)
+
+#range
+seq = range(5)
+
+for i in seq:
+    print(i)
+
+#range(stop)
+for x in range(5): 
+    print(x)
+
+#range(start, stop)
+for y in range(2, 10): 
+    print(y)
+
+#range(start, stop, step)
+for z in range(2, 10, 2): 
+     print(z)
+
+#odd even in range
+for odd in range(1, 50, 2):
+    print(odd)
+
+for even in range(2, 50, 2):
+    print(even)
+
+#pass statement
+for i in range(5):
+    pass
+if i > 5:
+    pass
+print("Use for for future code.")

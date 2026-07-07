@@ -216,5 +216,84 @@ print("end of loop..")
 """
 
 """QS NO:21
+print the elements of the following list using a loop and search for 
+a number x in this tuples using loop.
+num = [1, 4, 9, 25, 36, 45, 55,60, 81, 100]
+x = 60
 
+idx = 0
+for el in num:
+    if(el == x):
+     print("number found at idx", idx)
+     break
+    idx += 1 
+"""
+
+""" QS NO:22
+print numbers from 1 to 25
+for num in range(1, 26):
+    print(num)
+"""
+
+""" QS NO:23
+print numbers from 25 to 1.
+for num in range(25, 0, -1):
+    print(num)
+"""
+
+"""QS NO:24
+print the multiplication table of a number n.
+n = int(input("Enter number:"))
+
+for multi in range(1, 11):
+    print(n * multi)
+"""
+
+"""QS NO:25 
+WAP to find the sum of first n numbers.(using for)
+num = int(input("Enter number:"))
+
+sum = 0
+for i in range(1, num+1):
+    sum += i
+
+print("total sum=", sum)
+"""
+
+"""QS NO:26
+WAP to find the sum of first n numbers.(using while)
+num = int(input("Enter number:"))
+
+sum = 0
+i = 1
+while i <= num:
+    sum += i
+    i += 1
+
+print("total sum=", sum)
+"""
+
+"""QS NO:27
+WAP to find the factorial of fist n numbers.(using while loop)
+num = int(input("Enter number:"))
+
+fact = 1
+i = 1
+while i <= num:
+    fact *= i
+    i += 1
+
+print("total factorial=", fact)
+"""
+
+"""QS NO:28
+WAP to find the factorial of fist n numbers.(using for loop)
+num = int(input("Enter number:"))
+
+fact = 1
+
+for i in range(1, num+1):
+    fact *= i
+
+print("Factorial =", fact)
 """
