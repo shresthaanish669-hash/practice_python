@@ -297,3 +297,48 @@ for i in range(1, num+1):
 
 print("Factorial =", fact)
 """
+
+"""QS NO:29
+WAP to print the length of a list.(using function)
+cities = ["Kathmandu", "Pokhara", "Gorkha"]
+fruits = ["Apple", "Banana", "Orange"]
+
+def print_len(list):
+    print(len(list))
+
+print_len(cities)
+print_len(fruits)
+"""
+
+"""QS NO:30
+WAP to print the elements of a list in a single line.(using function)
+heros = ["Spider-man", "Black panther", "Iron man", "Thor"]
+
+def print_list(list):
+    for item in list:
+        print(item, end = " ")
+
+print_list(heros)
+"""
+
+"""QS NO:31
+WAP to find the factorial on n.
+n = int(input("Enter number:"))
+
+def calc_fact(n):
+    fact = 1
+    for i in range(1, n+1):
+      fact *= i
+    print(fact)
+
+calc_fact(n)
+"""
+
+"""QS NO:32
+WAP to convert USD to NPR.
+ruppee = int(input("Enter number:"))
+def converter(usd_val):
+    npr_val = usd_val * 151
+    print(usd_val, "USD =", npr_val, "NPR")
+converter(ruppee)  
+"""
