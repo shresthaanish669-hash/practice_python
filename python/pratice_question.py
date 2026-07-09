@@ -342,3 +342,102 @@ def converter(usd_val):
     print(usd_val, "USD =", npr_val, "NPR")
 converter(ruppee)  
 """
+
+"""QS NO:33
+WAP a recursive function to calculate the sum of first natuarl numbers.
+n = int(input("Enter number:"))
+
+def calc_sum(n):
+    if(n == 0):
+      return 0
+    return calc_sum(n-1) + n
+
+sum = calc_sum(n)
+print(sum)
+"""
+
+"""QS NO:34
+WAP a recursive function to print all the elements in a list.
+def mout(list, idx= 0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    mout(list, idx + 1)
+
+mountain = ["Mt.Everest", "Mt.Manaslu", "Mt.kanchanjunga"]
+mout(mountain) 
+"""
+
+"""QS NO:35
+Create a file "pratice.txt" using python. Add the following data in it.
+with open("pratice.txt", "w") as f:
+  f.write("Hi everyone.\nWe are learning File I/O using python.")
+  f.write("\nI like programming in python. ")
+
+"""
+
+"""QS NO:36
+WAF that replace all occurance of "java" with "python" in above file.
+with open("pratice.txt", "r") as f:
+    data = f.read()
+
+new_data = data.replace("java", "python")
+print(new_data)
+
+with open("pratice.txt", "w") as f:
+    f.write(new_data)
+"""
+
+"""QS NO:37
+Search if the word "learning" exists in the file or not. 
+word = "learning"
+with open("pratice.txt", "r") as f:
+    data = f.read()
+    if(data.find(word) != -1):
+        print("Found")
+    else:
+        print("Not Found")
+"""
+
+"""QS NO:38
+Search if the word "learning" exists in the file or not using function. 
+def check_for_word():
+    word = "learning"
+    with open("pratice.txt", "r") as f:
+     data = f.read()
+    if(data.find(word) != -1):
+        print("Found")
+    else:
+        print("Not Found")
+
+check_for_word()
+"""
+
+"""QS NO:39
+WAF to find in which line of the file does the word "learning" occur first.
+def check_for_line():
+    word = "programming"
+    data = True
+    line_no = 1
+    with open("pratice.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(line_no)
+            line_no += 1
+
+    return -1
+print(check_for_line())
+"""
+count = 0
+
+with open("number.txt", "r") as f:
+    data = f.read()
+    print(data)
+
+    num = data.split(",")
+    for val in num:
+        if int(val) % 2 == 0:
+            count += 1
+
+print(count)

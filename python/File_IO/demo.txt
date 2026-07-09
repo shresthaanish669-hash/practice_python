@@ -1,0 +1,3 @@
+Hello! I am learnng python for my college proect.
+Ater this i am going to learn DJango.
+ I takes time to learn.
