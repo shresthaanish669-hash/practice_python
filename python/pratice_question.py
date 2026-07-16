@@ -429,6 +429,8 @@ def check_for_line():
     return -1
 print(check_for_line())
 """
+
+"""QS NO:40
 count = 0
 
 with open("number.txt", "r") as f:
@@ -441,3 +443,28 @@ with open("number.txt", "r") as f:
             count += 1
 
 print(count)
+
+"""
+
+"""QS NO:41
+Create student class that takes name and marks of 3 subjects as arguments in constructo. 
+Then create a method to print the average.
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def get_avg(self):
+        total = 0
+        for val in self.marks:
+            total += val
+        print("Hi", self.name, "your avg score is:", total / len(self.marks))
+
+
+s1 = Student("Tony Stark", [99, 85, 77])
+s1.get_avg()
+
+s1.name = "ironman"
+s1.get_avg()
+"""
+
