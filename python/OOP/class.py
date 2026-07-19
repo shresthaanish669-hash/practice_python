@@ -64,14 +64,44 @@
 # s1.welcome()
 # print(s1.get_marks())
 
-#Static Method
-class Teacher:
-    def __init__(self, name):
-        self.name = name
+# #Static Method
+# class Teacher:
+#     def __init__(self, name):
+#         self.name = name
 
-    @staticmethod
-    def hello():
-        print("Hell0")
+#     @staticmethod
+#     def hello():
+#         print("Hell0")
 
-t1 = Teacher("Ram")
-t1.hello()
+# t1 = Teacher("Ram")
+# t1.hello()
+
+# # del Keywords
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+
+# s1 = Student("Anish")
+# s2 = Student("Ram")
+
+# print("Student 1:", s1.name)
+# print("Student 2:", s2.name)
+
+# #deleting the s2 object
+# del s2
+# print("S2 has been deleted.")
+
+# print("Student 1:", s1.name)
+
+# Private Attribute or Method 
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self._acc_pass = acc_pass
+
+    def reset_pass(self):
+        print(self._acc_pass)
+
+acc1 = Account("01234445", "entitled123")
+print("Account No:", acc1.acc_no)
+print("Password:", acc1.reset_pass())
