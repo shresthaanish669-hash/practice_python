@@ -738,3 +738,127 @@ class Account:
 acc1 = Account("01234445", "entitled123")
 print("Account No:", acc1.acc_no)
 print("Password:", acc1.reset_pass())
+
+#singlelevel Iheritance
+class Toyota:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def start(self):
+        print(self.brand, "car has started.")
+
+    def stop(self):
+        print(self.brand, "car has stopped.")
+
+class Fortuner(Toyota):
+    def __init__(self, brand, model):
+        super().__init__(brand)
+        self.model = model
+
+    def display(self):
+        print("Brand:", self.brand)
+        print("Model:", self.model)
+
+car = Fortuner("Toyota", "Fortuner")
+
+car.display()
+car.start()
+car.stop()
+
+#Multilevel Iheritance
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def display_name(self):
+        print("Name:", self.name)
+
+class Student(Person):
+    def __init__(self, name, roll):
+        super().__init__(name)   # Call Person's constructor
+        self.roll = roll
+
+    def display_roll(self):
+        print("Roll No:", self.roll)
+
+class College_Student(Student):
+    def __init__(self, name, roll, college):
+        super().__init__(name, roll)   # Call Student's constructor
+        self.college = college
+
+    def display_college(self):
+        print("College:", self.college)
+
+s = College_Student("Anish", 1, "Xavier International College")
+
+s.display_name()
+s.display_roll()
+s.display_college()
+
+#Multiple Inheritance
+class A:
+    varA = "Welcome to class A"
+
+class B:
+    varB = "Welcome to class B"
+
+class C(A, B):
+    varC = "Welcome to class C"
+
+c1 = C()
+
+print(c1.varC)
+print(c1.varB)
+print(c1.varA)
+
+#Pratice multiple inheritance
+class Fruits:
+    varFruits = "Banana"
+
+class Animal:
+    varAnimal = "Monkey"
+
+class Statement(Fruits,Animal):
+    varStatement = "Monkey eats Banana."
+
+c1 = Statement()
+
+print(c1.varAnimal)
+print(c1.varFruits)
+print(c1.varStatement)
+
+
+#class Methods
+class Teacher:
+    name = "Anonymous"
+
+    #def changeName(obj, name):
+    #   swlf.__class__.name = "Anish Shrestha"
+ 
+    @classmethod
+    def changeName(cls,name):
+        cls.name = name
+
+t1 = Teacher()
+t1.changeName("AnishShrestha")
+print(t1.name)
+print(Teacher.name)
+
+# Getter and Setter method
+class Employee:
+    def __init__(self, name):
+        self.__name = name
+    
+    #getter
+    def get_name(self):
+        return self.__name
+    
+    #setter
+    def set__name(self, name):
+        self.__name = name
+
+e1 = Employee("Ram")
+print(e1.get_name()) #Getter
+
+e1.set__name("Sita") #Setter
+print(e1.get_name())

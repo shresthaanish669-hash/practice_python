@@ -10,7 +10,7 @@ class Toyota:
 
 class Fortuner(Toyota):
     def __init__(self, brand, model):
-        super().__init__(brand)
+        super().__init__(brand) #it iherits the parent constructor value (Super keyword) 
         self.model = model
 
     def display(self):
