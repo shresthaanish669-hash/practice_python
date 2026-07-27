@@ -498,3 +498,95 @@ acc1.debit(1000)
 acc1.debit(5000)
 acc1.credit(40000)
 """
+
+"""QS NO: 43
+Define a circle class to create a circle with radius r using the constructor.
+Define an Area()method of the class which calculates the area of the circle.
+Define a Perimeter() method of the class which allows you to celebrate the perimeter of the circle.
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return (22/7) * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * (22/7) * self.radius
+
+c1 = Circle(21)
+print(c1.area())
+print(c1.perimeter())
+"""
+
+"""QS NO: 44
+Define a Employee class with attributes role, department and salary. This class also has a showDetails() method.
+Create an Enginner class that inherits properties from Employee and has additional attributes: name and age.
+class Employee:
+    def __init__(self, role, department, salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
+
+    def showDetails(self):
+        print("Role:", self.role)
+        print("Department:", self.department)
+        print("Salary:", self.salary)
+
+
+class Engineer(Employee):
+    def __init__(self, name, age):   # Corrected __init__
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "90,000")
+
+
+eng1 = Engineer("Elon Musk", 40)
+eng1.showDetails()
+"""
+
+"""QS NO:45
+Overriding the showDetails() method in Engineer().
+class Employee:
+    def __init__(self, role, department, salary):
+        self.role = role
+        self.department = department
+        self.salary = salary
+
+    def showDetails(self):
+        print("Role:", self.role)
+        print("Department:", self.department)
+        print("Salary:", self.salary)
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "90,000")
+
+    def showDetails(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        super().showDetails()
+
+eng1 = Engineer("Elon Musk", 40)
+eng1.showDetails()
+"""
+
+"""QS NO:46
+Create a class called Order whidh stores item and its price.
+use Dunder Function __gt__ to convey that:
+  order1 > order2 if price of the order2 > price of order2 
+
+"""
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, odd2):
+        return self.price > odd2.price
+
+odd1 = Order("Tea", 50)
+odd2 = Order("Coffee", 120)
+
+print(odd1 > odd2) #False
