@@ -1,4 +1,4 @@
-import random
+import secrets
 
 lower = "abcdefghijklmnopqrstuvwxyz"
 upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
