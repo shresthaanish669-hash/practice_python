@@ -31,7 +31,7 @@ while True:
             for expense in expenses:
                 print(
                     "Name:", expense["name"],
-                    "| Amount:RS.",expense["amount"]
+                    "| Amount: RS.", expense["amount"]
                 )
 
     elif choice == "3":
