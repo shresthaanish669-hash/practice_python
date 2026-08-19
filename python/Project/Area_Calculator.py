@@ -17,7 +17,7 @@ while True:
 
     elif choice == "2":
         radius = float(input("Enter radius: "))
-        area = math.pi * radius ** 2
+        area = 3.14 * radius ^ 2
         print("Area of circle is:", area)
 
     elif choice == "3":
